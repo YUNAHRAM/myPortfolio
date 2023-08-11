@@ -7,27 +7,69 @@ li {
     list-style: none;
 }
 a {
+    
     text-decoration: none;
     color: #333;
+    
 }
 img {
     vertical-align: top;
     width: 100%;
 }
-body {
-    width: 100vw;
-    height: 100vh;
+/* body {
+   position: relative;
+} */
+
+
+/* Top button */
+.goTop {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    border: 1px solid #333;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px 10px;
 }
+
+.goTop img {
+   display: block;
+   margin: auto;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+}
+.goTop h4 {
+    text-align: center;
+    color:  #A175BD;
+    font-size: 18px;
+    
+}
+/* Top button End  */
+
+
 /* wrap */
 #wrap {
     width: 100%;
-    height: 100%;
-    /* position: relative; */
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
 }
 .header {
     width: 100%;
+    height: 120px;
     border-bottom: 1px solid black;
     display: flex;
+    position:sticky;
+    top: 0px;
+    z-index: 9999;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 .logo {
     width: 200px;
@@ -41,12 +83,13 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
+    font-size: 1.8rem;
 
 }
 .menu {
     width: 100%;
     height: 120px;
-    background-color: #fff;
+    
     display: flex;
     justify-content: end;
     align-items: center;
@@ -57,13 +100,13 @@ body {
 }
 .menu a:hover {
    
-    color: darkmagenta;
+    color: #A175BD;
     
 }
 
 #slider {
     width: 100%;
-    height: 100%;
+    height: 90vh; 
     position: relative;
 }
 #slider .slide1 {
@@ -84,9 +127,10 @@ body {
 
 #contents section {
     width: 80%;
-    height: 70%;
+    height: 100vh;
     margin: 0 auto;
-    /* background-color: #ccc; */
+    background-color: #ccc;
+    padding-top: 130px;
 }
 #contents section h2 {         
     padding: 40px 50px ;
@@ -104,7 +148,7 @@ body {
 }
 #contents section div span {
     font-size: 30px;
-    color: blueviolet;
+    color: #A175BD;
 }
 #contents section .skills {
     display: flex;
