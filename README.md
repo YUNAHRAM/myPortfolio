@@ -1,3 +1,3 @@
 # myPortfolio
 
-**https://yunahram.github.io/myPortfolio/**
+**https://yunahram.github.io/myPortfolio/index.html**
