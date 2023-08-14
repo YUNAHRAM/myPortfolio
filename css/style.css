@@ -130,6 +130,7 @@ img {
     position: relative;
     padding-top: 220px;
     }
+
 #contents section h2 {         
     padding: 40px 50px ;
     font-size: 32px;
@@ -145,6 +146,7 @@ img {
     padding: 20px;
     font-size: 24px;
 }
+
 #contents section div span {
     font-size: 30px;
     font-weight: bold;
@@ -155,34 +157,35 @@ img {
     justify-content: center;
     align-items: center;
     /* position: relative; */
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    
+  
    
 }
 #skills {
     width: 100%;
-    background: url("../img/circle01.png") no-repeat center/contain;
+    background: url("../img/circle02.png") no-repeat center/contain;
 }
 #skills img {
     width: 100%;
 }
 #skills > div {
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 32%;
+    left: 22%;
     width: 400px;
 }
-#contents section .skills {
-    position: absolute;
-    top: 40%;
-    left: 24%;
-    
-}
+
 
 #contents section .skills li{
     /* position: absolute;
     top: 210px;
     left: 100px; */
-    width: 400px;
-    height: 400px;
+   
+    width: 500px;
+    height: 500px;
     
 }
 #contents section .skills li img{
@@ -229,8 +232,8 @@ img {
 }
 
 #contents section .webPage li{
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
  
     background-color: #fff;
     border-radius: 30px 30px 30px 30px;
@@ -241,8 +244,8 @@ img {
 
 }
 #contents section .webPage img {
-    width: 280px;
-    height: 200px;
+    width: 240px;
+    height: 180px;
     border-radius: 30px 30px 0px 0px;
     overflow: hidden;
 }
@@ -251,27 +254,30 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px;
+    padding: 8px;
 }
 #contents section .webPage span {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 15px;
     /* padding: 10px; */
 }
 /* webpage end */
 
 /* designs start */
+#design {
+    position: relative;
+}
 #contents section .designs {
     width: 100%;
-    
     padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* position: relative; */
 }
 
 #contents section .designs li{
@@ -280,9 +286,13 @@ img {
     border: 1px solid black;
     border-radius: 30px;
     overflow: hidden;
+    /* position: absolute; */
 }
 
-#contents section .designs li:hover{}
+#contents section .designs li:hover{
+
+    
+}
 
 #contents section .designs img {
     width: 200px;
@@ -290,12 +300,16 @@ img {
     border-radius: 30px 30px 0px 0px;
     overflow: hidden;
 }
-#contents section .designs p {
+
+.designTxt {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
+    position: absolute;
+    top: 50%;
+}
+.designTxt p {
+    width: 200px ;
+    text-align: center;
 }
