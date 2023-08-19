@@ -18,9 +18,11 @@ img {
     width: 100%;
     border:0;
 }
-/* body {
-   position: relative;
-} */
+body {
+   font-family:'Noto Sans KR', sans-serif;
+   letter-spacing: 0;
+   word-break: keep-all;
+}
 
 
 /* Top button */
