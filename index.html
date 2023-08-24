@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,12 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"
+        integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- 사용자 스크립트 -->
     <script src="./js/main.js"></script>
@@ -20,12 +25,15 @@
     <!-- Noto Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
     font-family: 'Rajdhani', sans-serif; -->
-</head> 
+</head>
+
 <body>
     <!-- Top button -->
     <a href="#" class="go-top">
@@ -33,21 +41,33 @@
         <h4>Go Top</h4>
     </a>
     <!-- Top button End-->
-    
 
-  
+
+
     <div id="wrap">
-          <!-- header -->
+        <!-- header -->
         <header class="header" id="header">
-            <h1 class="logo">
-                <a href="#">OhromYUN</a>
-            </h1>
-            <nav class="menu">
-                <a href="#slider"><h3>Home</h3></a>
-                <a href="#skills"><h3>Skills</h3></a>
-                <a href="#webpage"><h3>WebPage</h3></a>
-                <a href="#design"><h3>Designs</h3></a>
-            </nav>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">OhromYUN</a>
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#slider">
+                                <h3>Home</h3>
+                            </a></li>
+                        <li><a href="#skills">
+                                <h3>Skills</h3>
+                            </a></li>
+                        <li><a href="#webpage">
+                                <h3>WebPage</h3>
+                            </a></li>
+                        <li><a href="#design">
+                                <h3>Designs</h3>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- //header -->
         <!-- main -->
@@ -60,120 +80,143 @@
         <!-- contents -->
         <main id="contents">
             <section class="cnt1" id="skills">
-                <h2>Skills</h2>
-                <div>
+                <div class="inner" id="skills-in">
+                    <h2>Skills</h2>
                     <div>
-                        <h3>
-                        계단을 오르는 퍼블리셔,<br> 
-                        OhromYUN
-                        <span>윤아람 </span>입니다.
-                        </h3> 
+                        <div class="introfont">
+                            <h3>
+                                계단을 오르는 퍼블리셔,<br>
+                                OhromYUN
+                                <span>윤아람 </span>입니다.
+                            </h3>
+                        </div>
+                        <div></div>
                     </div>
-                    <div></div>
-                </div>
-                
-                <ul class="skills">
-                
-                    <li>
-                        <!-- <img src="./img/circle01.png" alt=""> -->
-                        <p>
-                            name :  <span>윤아람 (39)</span><br>
-                            E-mail : <span>romyunoh@gmail.com </span><br>
-                            Phone :<span> 010-9776-2131 </span><br>
-                            Education :<span> 영진전문대학 경영학과</span> <br>
+                    <ul class="skills">
+                        <li>
+                            <p>
+                                name : <span>윤아람 (39)</span><br>
+                                E-mail : <span>romyunoh@gmail.com </span><br>
+                                Phone :<span> 010-9776-2131 </span><br>
+                                Education :<span> 영진전문대학 경영학과</span> <br>
                             </p>
                             <p>
-                                Skills : 
-                                    <div>
-                                        <img src="./skillLogo/skill01.png" alt="" class="longImg"> 
-                                    </div>
-                                    <div>
-                                        <img src="./skillLogo/skill02.png" alt="">
-                                        <img src="./skillLogo/skill03.png" alt="">
-                                        <img src="./skillLogo/skill04.png" alt=""> <br>
-                                    </div>
-                                </p>
-                    </li>
-                    <li>
-                     
-                        <p>
-                        Certificate :  <br>
-                            <span>
-                                GTQ그래픽기술자격 1급 <br>
-                                GTQ일러스트 1급 <br>
-                                컴퓨터그래픽스 운용기능사 <br>
-                                웹디자인기능사 <br>
-                                정보처리산업기사 [ 필기합격 ] - 10월 실기예정  <br>
-                                운전면허 2종 보통<br>
-                            </span>
-                        </p>    
-                    </li>
-                </ul>
+                                Skills :
+                            <div>
+                                <img src="./skillLogo/skill01.png" alt="" class="longImg">
+                            </div>
+                            <div>
+                                <img src="./skillLogo/skill02.png" alt="">
+                                <img src="./skillLogo/skill03.png" alt="">
+                                <img src="./skillLogo/skill04.png" alt=""> <br>
+                            </div>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Certificate : <br>
+                                <span>
+                                    GTQ그래픽기술자격 1급 <br>
+                                    GTQ일러스트 1급 <br>
+                                    컴퓨터그래픽스 운용기능사 <br>
+                                    웹디자인기능사 <br>
+                                    정보처리산업기사 [ 필기합격 ] - 10월 실기예정 <br>
+                                    운전면허 2종 보통<br>
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="cnt2" id="webpage">
-                <h2>Web Page</h2>
-                <ul class="webPage">
-                    <li><a href="https://yunahram.github.io/dosiraktongClone/dosiraktong/Main/index.html">
-                        <img src="./img/dosiraktongClone.png" alt="">
-                        <p>도시락통 클론 코딩</p>
-                    </a></li>
-                    <li><a href="https://yunahram.github.io/momentumClone/momentumClone/index.html">
-                        <img src="./img/momentumClone.png" alt="">
-                        <p>Momentum 클론 코딩</p>
-                    </a></li>
-                    <li><a href="https://yunahram.github.io/99s/html/index.html">
-                        <img src="./img/99sProject.png" alt="">
-                        <p>2명 프로젝트</p> <span> 팀 99's/어서와, 대구는 처음이지</span>
-                    </a></li>
-                    <!-- <li><a href="https://yunahram.github.io/99s/html/clk1.html">
-                        <img src="./img/99sProject.png" alt="">
-                        <p>2명 프로젝트 - 팀 99's/설문페이지</p>
-                    </a></li> -->
-                    <li><a href="https://yunahram.github.io/hyft/HYFT/list2.html">
-                        <img src="./img/HYFTproject.png" alt="">
-                        <p>4명 프로젝트</p> <span> 팀 HYFT/오늘 당신의 MOOD</span>
-                    </a></li>
-                    <!-- <li><a href="https://yunahram.github.io/hyft/HYFT/detailmush.html">
-                        <img src="./img/HYFTproject.png" alt="">
-                        <p>4명 프로젝트 - 팀 HYFT/상품상세페이지 </p>
-                    </a></li> -->
-                </ul>
+                <div class="inner">
+                    <h2>Web Page</h2>
+                    <ul class="webPage">
+                        <li><a href="https://yunahram.github.io/dosiraktongClone/dosiraktong/Main/index.html"
+                                target="_blank">
+                                <img src="./img/dosiraktongClone.png" alt="dosiraktongimage">
+                                <p>도시락통 클론 코딩</p>
+                            </a></li>
+                        <li><a href="https://yunahram.github.io/momentumClone/momentumClone/index.html" target="_blank">
+                                <img src="./img/momentumClone.png" alt="momentumimage">
+                                <p>Momentum 클론 코딩</p>
+                            </a></li>
+                        <li><a href="https://yunahram.github.io/99s/html/index.html" target="_blank">
+                                <img src="./img/99sProject.png" alt="daegufirstimage">
+                                <p>2명 프로젝트</p> <span> 팀 99's/어서와, 대구는 처음이지</span>
+                            </a></li>
+                        <!-- <li><a href="https://yunahram.github.io/99s/html/clk1.html">
+                            <img src="./img/99sProject.png" alt="">
+                            <p>2명 프로젝트 - 팀 99's/설문페이지</p>
+                        </a></li> -->
+                        <li><a href="https://yunahram.github.io/hyft/HYFT/list2.html" target="_blank">
+                                <img src="./img/HYFTproject.png" alt="moodimage">
+                                <p>4명 프로젝트</p> <span> 팀 HYFT/오늘 당신의 MOOD</span>
+                            </a></li>
+                        <!-- <li><a href="https://yunahram.github.io/hyft/HYFT/detailmush.html">
+                            <img src="./img/HYFTproject.png" alt="">
+                            <p>4명 프로젝트 - 팀 HYFT/상품상세페이지 </p>
+                        </a></li> -->
+                    </ul>
+                </div>
             </section>
             <section class="cnt3" id="design">
-                <h2>Designs</h2>
-                <div class="position">
-                    <ul class="designs">
-                        <li><a href="#">
-                            <img src="" alt="">
+                <div class="inner">
+                    <h2>Designs</h2>
+                    <div class="position">
+                        <ul class="designs">
+                            <li><a href="./img/designsImg/thinkhouse.jpeg" target="_blank">
+                                    <img src="./img/designsImg/thinkhousethumbnail.png" alt="ThinkHouseLogo">
+                                </a>
+                            </li>
+
+                            <li><a href="./img/designsImg/thekflower1.jpeg" target="_blank">
+                                    <img src="./img/designsImg/thekthumbnail1.png" alt="TheKflowerLogo">
+                                </a></li>
+
+                            <li><a href="./img/designsImg/thekflower2.jpeg" target="_blank">
+                                    <img src="./img/designsImg/thekthumbnail2.png" alt="TheKflowerLogo2">
+                                </a></li>
+                            <li><a href="./img/designsImg/allseegoo.jpeg" target="_blank">
+                                    <img src="./img/designsImg/allsee9thumbnail.png" alt="allSeeGooLogo">
+                                </a></li>
+
+                            <li><a href="https://yunahram.github.io/myPortfolio/index.html#" target="_blank">
+                                    <img src="./img/myimoticon.gif" alt="imoticon">
+                                </a></li>
+
+                        </ul>
+                        <div class="designTxt">
+                            <a href="#">
+                                <p>로고 디자인</p>
+                                <span>생각한 집</span>
                             </a>
-                        </li>
-                        
-                        <li><a href="#">
-                            <img src="" alt="">
-                            </a></li>
-                        
-                        <li><a href="#">
-                            <img src="" alt="">
-                            </a></li>
-                        
-                        <li><a href="#">
-                            <img src="" alt="">
-                            </a></li>
-                        
-                    </ul>
-                    <div class="designTxt">
-                        <a href="#"><p>로고 디자인</p></a>
-                        <a href="#"><p>로고 디자인</p></a>
-                        <a href="#"><p>로고 디자인</p></a>
-                        <a href="#"><p>리디자인</p></a>
-                    
+                            <a href="#">
+                                <p>로고 디자인</p>
+                                <span>더케이 야생화 -시안01</span>
+                            </a>
+                            <a href="#">
+                                <p>로고 디자인</p>
+                                <span>더케이 야생화 -시안02</span>
+                            </a>
+                            <a href="#">
+                                <p>로고 디자인</p>
+                                <span>올씨구</span>
+                            </a>
+                            <a href="#">
+                                <p>이모티콘</p>
+                                <span>흑곰이 캐릭터</span>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </section>
-            
+
         </main>
         <!-- //contents -->
 
     </div>
 </body>
+
 </html>

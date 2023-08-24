@@ -1,34 +1,40 @@
 @charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 li {
     list-style: none;
 }
+
 a {
-    
+
     text-decoration: none;
     color: #333;
-    
+
 }
+
 img {
     vertical-align: top;
     width: 100%;
-    border:0;
+    border: 0;
 }
+
 body {
-   font-family:'Noto Sans KR', sans-serif;
-   letter-spacing: 0;
-   word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0;
+    word-break: keep-all;
 }
+
 
 
 /* Top button */
 .go-top {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     position: fixed;
     border: 1px solid #333;
     border-radius: 50%;
@@ -39,20 +45,27 @@ body {
     z-index: 999;
     cursor: pointer;
     padding: 10px 10px;
-    
+
 }
 
-.go-top img {
+.go-top:hover {
+    box-shadow: 2px 2px 10px 5px #ccc;
+
+}
+
+.go-top>img {
     display: block;
     margin: auto;
     width: 40px;
     height: 40px;
 }
-.go-top h4 {
+
+.go-top>h4 {
     text-align: center;
-    color:  #A175BD;
+    color: #A175BD;
     font-size: 18px;
 }
+
 /* Top button End  */
 
 
@@ -63,101 +76,130 @@ body {
     position: relative;
     display: block;
 }
+
+/* 공통 레이아웃 */
+.inner {
+    position: relative;
+    display: block;
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
 .header {
     width: 100%;
     height: 120px;
     border-bottom: 1px solid black;
-    display: flex;
+    display: block;
     position: sticky;
     top: 0px;
+    left: 0px;
     z-index: 9999;
-    background-color: #fff;
-    /* position: relative; */
-    /* display: block; */
+    background-color: rgba(255, 255, 255, 1);
+    transition: height 0.5s, background 0.5s;
 }
+
+.header .inner {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+}
+
 .logo {
     width: 200px;
-    height: 120px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-  
 }
-.logo> a {
+
+.logo>a {
     padding: 20px;
-    display: flex;
+    display: block;
     align-items: center;
     font-size: 1.8rem;
-
+    font-family: 'Montserrat Alternates'
 }
+
 .menu {
     width: 100%;
     height: 120px;
-    
+}
+
+.menu>ul {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 50px;
-}
-.menu a {
-    padding: 10px 30px;
-}
-.menu a:hover {
-   
-    color: #A175BD;
-    
 }
 
+.menu>ul>li {
+    padding-right: 50px;
+}
+
+.menu>ul>li>a {
+    padding: 10px 30px;
+}
+
+.menu>ul>li>a:hover {
+
+    color: #A175BD;
+
+}
+
+/* slider */
 #slider {
     width: 100%;
-    height: 90vh; 
+    height: 90vh;
     position: relative;
 }
+
 #slider .slide1 {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    position:absolute;
-    background:url("../img/slide1.png") #fff no-repeat center;
+    position: absolute;
+    background: url("../img/slide1.png") #fff no-repeat center;
     background-size: contain;
     border-bottom: 1px solid #333;
 }
 
+/* slider End */
+
+/* contents */
 #contents {
     width: 100%;
     height: auto;
 }
 
-#contents section {
+#contents>section {
     width: 90%;
     height: 100vh;
     margin: 0 auto;
     position: relative;
     padding-top: 220px;
-    }
+}
 
-#contents section h2 {         
-    padding: 40px 50px ;
+#contents>section>div>h2 {
+    padding: 40px 50px;
     font-size: 32px;
 }
-/* #contents section > div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 400px;
-} */
 
-#contents section > div div h3{
+/* skills */
+.inner>div>div>h3 {
     padding: 20px;
     font-size: 24px;
 }
 
-#contents section div span {
+.introfont>h3>span {
     font-size: 30px;
     font-weight: bold;
     color: #A175BD;
 }
-#contents section .skills {
+
+.skills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,18 +207,14 @@ body {
     position: absolute;
     top: 40%;
     left: 20%;
-    
-  
-   
 }
+
 #skills {
     width: 100%;
     background: url("../img/circle02.png") no-repeat center/contain;
 }
-#skills img {
-    width: 100%;
-}
-#skills > div {
+
+#skills .inner>div {
     position: absolute;
     top: 32%;
     left: 22%;
@@ -184,77 +222,82 @@ body {
 }
 
 
-#contents section .skills li{
-    /* position: absolute;
-    top: 210px;
-    left: 100px; */
-   
+.skills>li {
     width: 500px;
     height: 500px;
-    
 }
-#contents section .skills li img{
+
+.skills>li img {
     width: 100%;
     height: auto;
 }
-#contents section .skills li  p {
+
+.skills>li>p {
     display: block;
     line-height: 40px;
     padding: 20px 20px;
     font-weight: bold;
     font-size: 22px;
 }
-#contents section .skills li div {
+
+.skills>li div {
     top: 0;
     left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#contents section .skills li div .longImg {
-    width: 110px;
-    height: 30px;
-}
-#contents section .skills li div img {
+
+
+.skills>li>div img {
     width: 30px;
     height: 30px;
     padding: 4px;
 }
 
-#contents section .skills li span {
+.skills>li>div .longImg {
+    width: 110px;
+    height: 30px;
+}
+
+.skills>li span {
     font-size: 18px;
     font-weight: lighter;
 }
-/* skills end */
+
+/* skills End */
 
 
 /* webpage */
-#contents section .webPage {
+.webPage {
     padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#contents section .webPage li{
+.webPage>li {
     width: 240px;
     height: 240px;
- 
+
     background-color: #fff;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 5px 5px 10px 3px #ccc;
 }
-#contents section .webPage li:hover{
+
+.webPage>li:hover {
     box-shadow: 5px 5px 10px 5px rgb(173, 171, 171);
 
 }
-#contents section .webPage img {
+
+.webPage img {
     width: 240px;
     height: 180px;
     border-radius: 30px 30px 0px 0px;
     overflow: hidden;
 }
-#contents section .webPage p {
+
+.webPage p {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -263,13 +306,15 @@ body {
     font-weight: bold;
     padding: 8px;
 }
-#contents section .webPage span {
+
+.webPage span {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
     /* padding: 10px; */
 }
+
 /* webpage end */
 
 /* designs start */
@@ -278,35 +323,35 @@ body {
     position: relative;
     display: block;
 }
-#contents section .designs {
+
+.designs {
     width: 100%;
     padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  
+
 }
 
-#contents section .designs li{
+.designs>li {
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    border: 0.5px solid #ccc;
     border-radius: 30px;
     overflow: hidden;
-  
-}
-
-#contents section .designs li:hover{
-
 
 }
 
-#contents section .designs img {
+.designs>li:hover {
+    box-shadow: 5px 5px 12px 4px rgb(191, 188, 188);
+}
+
+.designs li a img {
     width: 200px;
     height: 200px;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px 30px;
     overflow: hidden;
-    
+    /* background: cover; */
 }
 
 .designTxt {
@@ -317,8 +362,32 @@ body {
     position: absolute;
     top: 100%;
 }
+
 .designTxt p {
-    width: 200px ;
+    width: 200px;
     padding: 20px;
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
 }
+
+.designTxt span {
+    display: block;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* designs End */
+
+/* 반응형 */
+@media screen and (max-width: 1280px) {}
+
+
+
+@media screen and (max-width: 760px) {}
+
+
+
+@media screen and (max-width:480px) {}
